@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: white;
+    background-color: #ffffff; 
+    background-image: 
+        linear-gradient(#00000088, #00000088),
+        url("images/photo_2026-09-06_10-23-17.jpg");
+    background-position: center 80px; 
+    background-size: contain; 
+    background-repeat: no-repeat; 
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 8%;
+  background: white;
+  box-shadow: 0 2px 10px #00000012;
+}
+
+header h1 {
+  margin: 0;
+  color: #d8464d;
+  font-size: 24px;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #d8465e;
+}
+
+.hero {
+  padding: 110px 20px;
+  text-align: center;
+}
+
+.hero h2 {
+  margin-bottom: 10px;
+  color: #d84646;
+  font-size: 48px;
+}
+
+.hero p {
+  font-size: 18px;
+}
+
+button {
+  padding: 12px 22px;
+  border: 0;
+  border-radius: 8px;
+  color: white;
+  background: #d84646;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #30a840;
+}
+
+#about {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+footer {
+  padding: 30px;
+  color: white;
+  background: #371f1f;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  header {
+    display: block;
+    text-align: center;
+  }
+
+  nav {
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .hero h2 {
+    font-size: 36px;
+  }
+}
