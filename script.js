@@ -1,5 +1,12 @@
-const button = document.querySelector('#welcomeButton');
+const seeMoreBtn = document.getElementById('welcomeButton');
+const categoryContainer = document.getElementById('categoryContainer');
 
-button.addEventListener('click', () => {
-  alert('working on it stay tuned');
+seeMoreBtn.addEventListener('click', function(e) {
+    e.preventDefault();
+    
+    if (categoryContainer.style.display === 'flex') {
+        categoryContainer.style.display = 'none';
+    } else {
+        categoryContainer.style.display = 'flex';
+    }
 });
